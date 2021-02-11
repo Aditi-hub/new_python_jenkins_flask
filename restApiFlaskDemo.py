@@ -78,7 +78,7 @@ class ProductSchema(ModelSchema): #Product Schema inherits Model Schema
     starRating = fields.Number(required=True) 
     imageUrl = fields.String(required=True)     
         
-@app.route('/products',methods=['POST']) #POST API    
+@app.route('/ibm',methods=['POST']) #POST API    
 def createProduct():
     data = request.get_json()
     product_schema = ProductSchema() #creating obj
